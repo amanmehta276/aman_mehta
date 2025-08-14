@@ -1,0 +1,258 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FAF3DD; /* Light Cream for Background */
+    color: #333; /* Neutral Text Color */
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Header Styles */
+/* General Navigation Styles */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+nav li {
+    position: relative;
+}
+
+/* Dropdown Menu Styles */
+.dropdown .dropdown-menu {
+    display: none; /* Hidden by default */
+    position: absolute;
+    top: 100%; /* Position below the parent */
+    left: 0;
+    background-color: #FFFFFF; /* White background */
+    border: 1px solid #2A75BB; /* Blue border */
+    border-radius: 5px;
+    padding: 0.5rem 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    width: 150px;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block; /* Show dropdown on hover */
+}
+
+.dropdown-menu li {
+    margin: 0;
+    padding: 0;
+}
+
+.dropdown-menu li a {
+    display: block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: #2A75BB;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #2A75BB;
+    color: #FFFFFF;
+}
+
+/* Adjust Main Links */
+nav a {
+    text-decoration: none;
+    color: #2A75BB;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #FF5C5C;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFCB05; /* Pokémon Yellow */
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.2rem;
+    color: #2A75BB; /* Pokémon Blue */
+    margin: 0;
+}
+
+/* Search Bar */
+.search-bar {
+    flex: 1;
+    max-width: 600px;
+    margin: 1rem 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    flex: 1;
+    padding: 0.6rem 1rem;
+    border: 2px solid #2A75BB;
+    border-right: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    font-size: 1rem;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.search-bar input:focus {
+    border-color: #FF5C5C;
+}
+
+.search-bar button {
+    padding: 0.6rem 1rem;
+    background-color: #FF5C5C;
+    color: #FFFFFF;
+    border: 2px solid #FF5C5C;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.search-bar button:hover {
+    background-color: #D43B3B;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #2A75BB;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #FF5C5C;
+}
+
+/* Main Content Styles */
+main {
+    margin: 2rem auto;
+    max-width: 800px;
+    padding: 1rem;
+}
+
+/* Search Placeholder */
+.search-placeholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+    border: 3px dashed #2A75BB; /* Dashed border for emphasis */
+    border-radius: 15px;
+    padding: 2.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    margin: 2rem auto;
+    max-width: 800px;
+}
+
+.search-placeholder h3 {
+    font-size: 2.2rem;
+    color: #2A75BB;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.search-placeholder p {
+    font-size: 1.3rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+}
+
+.search-placeholder img {
+    width: 220px;
+    height: auto;
+    object-fit: contain;
+    margin-top: 1rem;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.search-placeholder img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Pokémon Details Section */
+.pokemon-info {
+    background-color: #FFFFFF;
+    border: 2px solid #2A75BB;
+    border-radius: 10px;
+    height:100%;
+    padding: 2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.pokemon-info p {
+    font-size: 1.3rem;
+    color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .search-placeholder {
+        padding: 2rem;
+    }
+
+    .search-placeholder h3 {
+        font-size: 1.8rem;
+    }
+
+    .search-placeholder img {
+        width: 180px;
+    }
+
+    .pokemon-info {
+        padding: 1.5rem;
+    }
+
+    .pokemon-info p {
+        font-size: 1.1rem;
+    }
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #2A75BB;
+    color: #FFFFFF;
+    font-size: 0.9rem;
+    margin-top: 2rem;
+}

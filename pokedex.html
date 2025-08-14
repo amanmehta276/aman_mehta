@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokédex</title>
+  <link rel="stylesheet" href="pokedex.css">
+</head>
+<body>
+  <header>
+    <!-- Pokémon Title -->
+    <h1>Pokémon</h1>
+
+    <!-- Search Bar -->
+    <div class="search-bar">
+      <label for="pokemon-search" class="sr-only"></label>
+      <input type="text" id="pokemon-search" placeholder="Search Pokémon...">
+      <button id="search-button">Search</button>
+    </div>
+
+    <!-- Links with Dropdowns -->
+    <nav>
+      <ul>
+        <li><a href="http://127.0.0.1:5500/index.html"><div class="p1">Home</div></a></li>
+
+        <!-- Region Dropdown -->
+        <li class="dropdown">
+          <a href="#region"><div class="p1">Region</div></a>
+          <ul class="dropdown-menu">
+            <li><a href="#kanto">Kanto</a></li>
+            <li><a href="#johto">Johto</a></li>
+            <li><a href="#hoenn">Hoenn</a></li>
+            <li><a href="#sinnoh">Sinnoh</a></li>
+            <li><a href="#unova">Unova</a></li>
+            <li><a href="#kalos">Kalos</a></li>
+            <li><a href="#alola">Alola</a></li>
+            <li><a href="#galar">Galar</a></li>
+            <li><a href="#paldea">Paldea</a></li>
+          </ul>
+        </li>
+
+        <!-- Types Dropdown -->
+        <li class="dropdown">
+          <a href="#types"><div class="p1">Types</div></a>
+          <ul class="dropdown-menu">
+            <li><a href="#normal">Normal</a></li>
+            <li><a href="#fire">Fire</a></li>
+            <li><a href="#water">Water</a></li>
+            <li><a href="#grass">Grass</a></li>
+            <li><a href="#electric">Electric</a></li>
+            <li><a href="#ice">Ice</a></li>
+            <li><a href="#fighting">Fighting</a></li>
+            <li><a href="#poison">Poison</a></li>
+            <li><a href="#ground">Ground</a></li>
+            <li><a href="#flying">Flying</a></li>
+            <li><a href="#psychic">Psychic</a></li>
+            <li><a href="#bug">Bug</a></li>
+            <li><a href="#rock">Rock</a></li>
+            <li><a href="#ghost">Ghost</a></li>
+            <li><a href="#dragon">Dragon</a></li>
+            <li><a href="#dark">Dark</a></li>
+            <li><a href="#steel">Steel</a></li>
+            <li><a href="#fairy">Fairy</a></li>
+          </ul>
+        </li>
+
+        <li><a href="#about"><div class="p1">About</div></a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+      <section class="pokemon-info">
+        <p>Search for a Pokémon to see details here!</p>
+      </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Pokédex | Made with care for Pokémon fans!</p> 
+  </footer>
+  <script src="pokedex.js"></script>
+</body>
+</html>
